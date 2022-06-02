@@ -43,9 +43,6 @@ file
 read - Reads A File Named As Given Value
 write - Writes Second Value In A File Named As First Value, Creates If Not Found
 
-external resource
-module - Imports And Partially Executes Module
-
 time
 reset_tick - Resets Engine Tick Count
 pause_tick - Pauses Engine Ticking
@@ -53,14 +50,17 @@ resume_tick - Resumes Engine TIcking
 get_tick - Gets Engine Tick Count
 
 console
-clear - Clears Output Console
 console - Executes Given Value As Command In Running Console
+clear - Clears Output Console
 
 debug
 info - Variable/Value Type
 restore - Allows Code Execution Again
 error - Creates Error
 warn - Creates Warning
+
+external resource
+module - Imports And Partially Executes Module
 
 variable types
 binary

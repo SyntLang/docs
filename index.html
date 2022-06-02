@@ -101,10 +101,29 @@
 				<t2 onclick="view_topic('delete-alg');">Delete</t2>
 
 				<t1 new onclick="view_topic('file-algs');">File</t1>
+				<t2 onclick="view_topic('read-alg');">Read</t2>
+				<t2 onclick="view_topic('write-alg');">Write</t2>
+
 				<t1 new onclick="view_topic('time-algs');">Time</t1>
+				<t2 onclick="view_topic('synt-ticking');">Ticks</t2>
+				<t2 onclick="view_topic('synt-time');">Time</t2>
+				<t2 onclick="view_topic('reset_tick-alg');">Reset Tick</t2>
+				<t2 onclick="view_topic('pause_tick-alg');">Pause Tick</t2>
+				<t2 onclick="view_topic('resume_tick-alg');">Resume Tick</t2>
+				<t2 onclick="view_topic('get_tick-alg');">Get Tick</t2>
+
 				<t1 new onclick="view_topic('console-algs');">Console</t1>
+				<t2 onclick="view_topic('console-alg');">Console</t2>
+				<t2 onclick="view_topic('clear-alg');">Clear</t2>
+
 				<t1 new onclick="view_topic('debug-algs');">Debug</t1>
+				<t2 onclick="view_topic('info-alg');">Variable Type</t2>
+				<t2 onclick="view_topic('restore-alg');">Restore</t2>
+				<t2 onclick="view_topic('error-alg');">Error</t2>
+				<t2 onclick="view_topic('warn-alg');">Warn</t2>
+
 				<t1 new onclick="view_topic('ex-res-algs');">Modules</t1>
+				<t2 onclick="view_topic('module-alg');">Importing</t2>
 			</div>
 			<div class="content" id="content">
 				<div id="top" class="banner">
@@ -926,22 +945,241 @@
 				<h2 id="file-algs">
 					Reading and Writing Files
 				</h2>
+				<p>
+					Synt allows you to access local files on your computer.
+					This could be helpful to create cache for next run or to save data.
+					<br><br>
+					Synt can read and write files.
+				</p>
+
+				<h3 id="read-alg">
+					Reading a File
+				</h3>
+				<p>
+					To read a file, you can use the <highlight>read</highlight> function.
+					Just note that the file should exists.
+					<br><br>
+					<p class="code">
+						var text data
+						read data "file.txt"
+						? reads "file.txt" and stores it in data
+					</p>
+				</p>
+
+				<h3 id="write-alg">
+					Writing a File
+				</h3>
+				<p>
+					To write a file, you can use the <highlight>write</highlight> function.
+					If file does not exist, it will be created.
+					If file does exist, it will be overwritten.
+					<br><br>
+					<p class="code">
+						write "file.txt" data
+						? writes data to "file.txt"
+					</p>
+				</p>
 				
 				<h2 id="time-algs">
 					Synt Time and Ticking
 				</h2>
+
+				<h3 id="synt-ticking">
+					Ticks in Synt
+				</h3>
+				<p>
+					Synt has a customizable <highlight>tick system</highlight> that allows using and calculating time slightly easier.
+					One tick is equal to one millisecond.
+					Ticks can be reset, paused and resumed.
+					It can also be set to a specific value.
+				</p>
+
+				<h3 id="synt-time">
+					Time in Synt
+				</h3>
+				<p>
+					Synt also has a <highlight>time system</highlight>.
+					This system can not take any inputs.
+					It is made only for outputs.
+					It isn't affected by ticks.
+				</p>
+
+				<h3 id="reset_tick-alg">
+					Resetting Ticks
+				</h3>
+				<p>
+					To reset ticks, you can use the <highlight>reset_tick</highlight> function.
+					This will set the tick value to 0, which was initial value.
+					<br><br>
+					<p class="code">
+						reset_tick
+						? resets ticks
+					</p>
+				</p>
+
+				<h3 id="pause_tick-alg">
+					Pausing Ticks
+				</h3>
+				<p>
+					To pause ticks, you can use the <highlight>pause_tick</highlight> function.
+					This will stop updating ticks until resumed.
+					<br><br>
+					<p class="code">
+						pause_tick
+						? pauses ticks
+					</p>
+				</p>
+
+				<h3 id="resume_tick-alg">
+					Resuming Ticks
+				</h3>
+				<p>
+					To resume ticks, you can use the <highlight>resume_tick</highlight> function.
+					This will resume updating ticks.
+					This might give you an error if you try to resume ticks when they are already resumed.
+					<br><br>
+					<p class="code">
+						resume_tick
+						? resumes ticks
+					</p>
+				</p>
+
+				<h3 id="get_tick-alg">
+					Getting Ticks
+				</h3>
+				<p>
+					To get ticks, you can use the <highlight>get_tick</highlight> function.
+					This will return the current tick value.
+					<br><br>
+					<p class="code">
+						var number this_tick
+						get_tick this_tick
+						? returns ticks and stores it in this_tick
+					</p>
+				</p>
 				
 				<h2 id="console-algs">
 					Handling Running Console with Synt
 				</h2>
+				<p>
+					When Synt is unable to do something directly, you might think to access console to run it through other means.
+					This is possible because Synt has the ability to access the console it is being run on.
+					You can also use console commands to change the other console properties.
+				</p>
+
+				<h3 id="console-alg">
+					Run Console Commands
+				</h3>
+				<p>
+					Synt has a <highlight>console</highlight> function that allows you to run console commands.
+					This is useful for changing the console properties that you want to but can't directly using Synt.
+					Not only console properties but if you want even run other console commands, you can use this function.
+					<br><br>
+					<p class="code">
+						console "command"
+						? runs "command" in console
+					</p>
+				</p>
+
+				<h3 id="clear-alg">
+					Clearing Console
+				</h3>
+				<p>
+					To clear the console, you can use the <highlight>clear</highlight> function.
+					This will clear the console.
+					<br><br>
+					<p class="code">
+						clear
+						? clears console
+					</p>
+				</p>
 				
 				<h2 id="debug-algs">
 					Debugging in Synt
 				</h2>
+				<p>
+					Synt has an useful set of <highlight>debug functions</highlight> that can be used to debug your code.
+					Debugging means to find out what is happening in your code.
+					Generally it is used to find out what is wrong with your code, that is wy you are getting an error.
+					However, it can also be used to understand how your code works.
+				</p>
+
+				<h3 id="info-alg">
+					Get Variable Type
+				</h3>
+				<p>
+					To get the type of a variable, you can use the <highlight>info</highlight> function.
+					This will return the type of the variable.
+					<br><br>
+					<p class="code">
+						var number this_number
+						var text type
+						info type this_number
+						? returns type of this_number and stores it in type
+					</p>
+				</p>
+
+				<h3 id="restore-alg">
+					Continuing Program after Error
+				</h3>
+				<p>
+					To continue the program after an error, you can use the <highlight>restore</highlight> function.
+					This will continue the program after an error.
+					<br><br>
+					<p class="code">
+						restore
+						? continues program after error
+					</p>
+				</p>
+
+				<h3 id="error-alg">
+					Custom Error Messages
+				</h3>
+				<p>
+					To create a custom error message, you can use the <highlight>error</highlight> function.
+					This will create and run a custom error message.
+					<br><br>
+					<p class="code">
+						error "message"
+						? displays error with "message" as content
+					</p>
+				</p>
+
+				<h3 id="warn-alg">
+					Custom Warning Messages
+				</h3>
+				<p>
+					To create a custom warning message, you can use the <highlight>warn</highlight> function.
+					This will create and run a custom warning message.
+					<br><br>
+					<p class="code">
+						warn "message"
+						? displays warning with "message" as content
+					</p>
+				</p>
 				
 				<h2 id="ex-res-algs">
 					Modules and External Resources
 				</h2>
+				<p>
+					Sometimes you want to organize your code in modules or other files that need to be run.
+					Synt allows you to import and run modules.
+					When you import a module, it will run the code in the module.
+					If there are any custom functions in the module, they will be available in the main file and while running in other modules that will be imported orderwise next.
+				</p>
+
+				<h3 id="module-alg">
+					Importing Local Files as Modules
+				</h3>
+				<p>
+					To import a local file as a module, you can use the <highlight>module</highlight> function.
+					This will import and run the module.
+					<br><br>
+					<p class="code">
+						module "module_name"
+						? imports file "module_name.synt" as module and runs it
+					</p>
+				</p>
 				
 				<div class="eof"></div>
 				
