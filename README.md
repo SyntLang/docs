@@ -1,115 +1,85 @@
-<center onclick="view_topic('top');">
-<sd>Synt Docs</sd>
-</center>
+# Synt Docs
 
-<tb onclick="view_topic('general-synt');">General</tb>
+# Table of Contents
 
-<t1 onclick="view_topic('what-is-synt');">What is Synt?</t1>
-<t1 onclick="view_topic('examples');">Examples</t1>
+## General
+1. What is Synt?
+    - Examples
+2. Installation
+    - Download
+    - Move to Path
+    - Add to Path
+3. Modes
+    - File
+    - Interactive
+    - Compile
+    - Quit
+    - SPyC
+    - SPyC Run
 
-<t1 onclick="view_topic('installation');">Installation</t1>
-<t2 onclick="view_topic('download-synt');">Download</t2>
-<t2 onclick="view_topic('move-synt');">Move to Path</t2>
-<t2 onclick="view_topic('add-synt-to-path');">Add to Path</t2>
+## Learn Synt
 
-<t1 onclick="view_topic('modes');">Modes</t1>
-<t2 onclick="view_topic('file-mode');">File</t2>
-<t2 onclick="view_topic('interactive-mode');">Interactive</t2>
-<t2 onclick="view_topic('compile-mode');">Compile</t2>
-<t2 onclick="view_topic('quit-mode');">Quit</t2>
-<t2 onclick="view_topic('spyc-mode');">SPyC</t2>
-<t2 onclick="view_topic('spyc-run-mode');">SPyC Run</t2>
-
-<tb onclick="view_topic('learn-synt');">Learn Synt</tb>
-
-<t1 onclick="view_topic('what-is-console');">Console Basics</t1>
-<t1 onclick="view_topic('code-parsing');">Code Iterations</t1>
-
-<t1 onclick="view_topic('commenting-algs');">Commenting</t1>
-<t2 onclick="view_topic('alg-comment');">General</t2>
-<t2 onclick="view_topic('query-comment');">Info</t2>
-<t2 onclick="view_topic('ai-comment');">Command</t2>
-
-<t1 new onclick="view_topic('basic-algs');">Basic</t1>
-<t2 onclick="view_topic('version-alg');">Version</t2>
-<t2 onclick="view_topic('end-alg');">End</t2>
-<t2 onclick="view_topic('output-alg');">Output</t2>
-<t2 onclick="view_topic('input-alg');">Input</t2>
-
-<t1 new onclick="view_topic('var-algs');">Variables</t1>
-<t2 onclick="view_topic('var-means');">Meaning</t2>
-<t2 onclick="view_topic('var-types');">Types</t2>
-<t2 onclick="view_topic('var-decl');">Creation</t2>
-<t2 onclick="view_topic('var-ref');">Using</t2>
-<t2 onclick="view_topic('coll-ref');">Collection Items</t2>
-
-<t1 new onclick="view_topic('func-algs');">Functions</t1>
-<t2 onclick="view_topic('func-means');">Meaning</t2>
-<t2 onclick="view_topic('func-decl');">Creation</t2>
-<t2 onclick="view_topic('func-ref');">Using</t2>
-<t2 onclick="view_topic('func-syntax');">Call Syntax</t2>
-<t2 onclick="view_topic('func-rtrn');">Return Values</t2>
-
-<t1 new onclick="view_topic('opr-algs');">Operator</t1>
-<t2 onclick="view_topic('opr-add');">Add</t2>
-<t2 onclick="view_topic('opr-sub');">Subtract</t2>
-<t2 onclick="view_topic('opr-mul');">Multiply</t2>
-<t2 onclick="view_topic('opr-div');">Divide</t2>
-<t2 onclick="view_topic('opr-pow');">Power</t2>
-
-<t1 new onclick="view_topic('logic-algs');">Logic</t1>
-<t2 onclick="view_topic('logic-chk');">Check</t2>
-<t2 onclick="view_topic('logic-cond');">Condition</t2>
-<t2 onclick="view_topic('logic-opr');">Operators</t2>
-
-<t1 new onclick="view_topic('str-spl');">Special Characters</t1>
-<t1 new onclick="view_topic('loop-algs');">Loop</t1>
-<t2 onclick="view_topic('repeat-alg');">Repeat</t2>
-<t2 onclick="view_topic('loop-alg');">Loop</t2>
-
-<t1 new onclick="view_topic('itr-algs');">Iterable Functions</t1>
-<t2 onclick="view_topic('count-alg');">Count</t2>
-<t2 onclick="view_topic('insert-alg');">Insert</t2>
-<t2 onclick="view_topic('remove-alg');">Remove</t2>
-<t2 onclick="view_topic('delete-alg');">Delete</t2>
-
-<t1 new onclick="view_topic('file-algs');">File</t1>
-<t2 onclick="view_topic('read-alg');">Read</t2>
-<t2 onclick="view_topic('write-alg');">Write</t2>
-
-<t1 new onclick="view_topic('time-algs');">Time</t1>
-<t2 onclick="view_topic('synt-ticking');">Ticks</t2>
-<t2 onclick="view_topic('synt-time');">Time</t2>
-<t2 onclick="view_topic('reset_tick-alg');">Reset Tick</t2>
-<t2 onclick="view_topic('pause_tick-alg');">Pause Tick</t2>
-<t2 onclick="view_topic('resume_tick-alg');">Resume Tick</t2>
-<t2 onclick="view_topic('get_tick-alg');">Get Tick</t2>
-
-<t1 new onclick="view_topic('console-algs');">Console</t1>
-<t2 onclick="view_topic('console-alg');">Console</t2>
-<t2 onclick="view_topic('clear-alg');">Clear</t2>
-
-<t1 new onclick="view_topic('debug-algs');">Debug</t1>
-<t2 onclick="view_topic('info-alg');">Variable Type</t2>
-<t2 onclick="view_topic('restore-alg');">Restore</t2>
-<t2 onclick="view_topic('error-alg');">Error</t2>
-<t2 onclick="view_topic('warn-alg');">Warn</t2>
-
-<t1 new onclick="view_topic('ex-res-algs');">Modules</t1>
-<t2 onclick="view_topic('module-alg');">Importing</t2>
-</div>
-<div class="content" id="content">
-<div id="top" class="banner">
-<h1 id="title">
-Synt Docs
-</h1>
-</div>
-
-<h2>
-<br>
-These docs are still in development and are incomplete for now!
-Deadline is hopefully Mid June 2022.
-</h2>
+1. Console Basics
+2. Code Iterations
+3. Commenting
+    - General
+    - Info
+    - Command
+4. Basic
+    - Version
+    - End
+    - Output
+    - Input
+5. Variables
+    - Meaning
+    - Types
+    - Creation
+    - Using Collection Items
+6. Functions
+    - Meaning
+    - Creation
+    - Using
+    - Call Syntax
+    - Return Values
+7. Operator
+    - Add
+    - Subtract
+    - Multiply
+    - Divide
+    - Power
+8. Logic
+    - Check
+    - Condition
+    - Operators
+9. Special Characters
+10. Loop
+    - Repeat
+    - Loop
+11. Iterable Functions
+    - Count
+    - Insert
+    - Remove
+    - Delete
+12. File
+    - Read
+    - Write
+13. Time
+    - Ticks
+    - Time
+    - Reset Tick
+    - Pause Tick
+    - Resume Tick
+    - Get Tick
+14. Console
+    - Console
+    - Clear
+15. Debug
+    - Variable Type
+    - Restore
+    - Error
+    - Warn
+16. Modules
+    - Importing
 
 <h1 id="general-synt">
 General
@@ -144,7 +114,7 @@ Hello Synt
 
 ```
 output "Hello Synt!"
-</p class="code">
+```
 
 <h3>
 Create Variables
@@ -152,7 +122,7 @@ Create Variables
 
 ```
 var number my_num1 0
-</p class="code">
+```
 
 <h3>
 Add Numbers
@@ -161,7 +131,7 @@ Add Numbers
 ```
 var number my_sum 0
 add my_sum 10 20 30 40 50 60
-</p class="code">
+```
 
 <h3>
 Variable Referencing
@@ -170,7 +140,7 @@ Variable Referencing
 ```
 var text name "Synt"
 output "Hello #name#!!! Welcome Back!!!"
-</p class="code">
+```
 
 
 <h2 id="installation">
